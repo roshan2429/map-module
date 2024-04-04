@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Location and Radius Input</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <style>
+        #mapid { height: 400px; }
+    </style>
+</head>
+<body>
+<h2>Enter Location and Radius</h2>
+<form id="locationForm">
+    Latitude: <input type="text" id="lat" name="lat" required>
+    Longitude: <input type="text" id="lon" name="lon" required>
+    Radius (in meters): <input type="text" id="radius" name="radius" required>
+    <input type="submit" value="Show on Map">
+</form>
+<div id="mapid"></div>
+<script src="script.js"></script>
+</body>
+</html>
